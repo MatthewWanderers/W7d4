@@ -135,6 +135,7 @@ ActiveRecord::Base.transaction do
       'moves' => [
          'tackle'
       ],
+      # METAPOD
     },
     '12' => {
       'name' => 'Butterfree',
@@ -156,6 +157,7 @@ ActiveRecord::Base.transaction do
       'moves' => [
          'poison sting'
       ],
+      # FILL HERE
     },
     '16' => {
       'name' => 'Pidgey',
@@ -1383,7 +1385,7 @@ ActiveRecord::Base.transaction do
   end
 
   Pokemon.create!(pokemon)
-  
+
   Pokemon.all.each do |pokemon|
     3.times { create_random_item!(pokemon) }
   end
